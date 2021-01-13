@@ -1,7 +1,6 @@
 package com.pathak.bimal.msscbeerservice.web.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.pathak.bimal.msscbeerservice.bootstrap.BeerLoader;
 import com.pathak.bimal.msscbeerservice.services.BeerService;
 import com.pathak.bimal.msscbeerservice.web.model.BeerDto;
 import com.pathak.bimal.msscbeerservice.web.model.BeerStyleEnum;
@@ -69,7 +68,7 @@ class BeerControllerTest {
                 .beerName("My Beer")
                 .beerStyle(BeerStyleEnum.ALE)
                 .price(new BigDecimal("2.99"))
-                .upc(BeerLoader.BEER_1_UPC)
+               // .upc(BeerLoader.BEER_1_UPC)
                 .build();
     }
 }
